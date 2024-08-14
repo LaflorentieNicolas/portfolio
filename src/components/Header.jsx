@@ -18,7 +18,7 @@ function Header() {
           </li>
           <li>
             <NavLink to="/project" activeclassname="active">
-              Projet
+              Mes projets
             </NavLink>
           </li>
           <li>
