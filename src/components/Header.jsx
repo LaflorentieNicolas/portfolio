@@ -4,9 +4,6 @@ import "../sass/main.scss";
 function Header() {
   return (
     <header>
-      <NavLink to="/">
-        <p>Test</p>
-      </NavLink>
       <nav>
         <ul>
           <li>
@@ -17,6 +14,21 @@ function Header() {
           <li>
             <NavLink to="/about" activeclassname="active">
               A propos
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/project" activeclassname="active">
+              Projet
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/cv" activeclassname="active">
+              CV
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" activeclassname="active">
+              Contact
             </NavLink>
           </li>
         </ul>

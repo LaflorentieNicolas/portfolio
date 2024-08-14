@@ -1,12 +1,15 @@
 @import "../utils/variables";
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
-  background-color: blue;
+  background-color: #555;
 
   @media (max-width: 768px) {
     padding: 0px 0px 27px 0px;
@@ -15,22 +18,27 @@ header {
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 57px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
 
     li {
       font-weight: 500;
       display: block;
+      color: white;
+
       a {
         text-decoration: none;
-        color: $black;
         font-size: 24px;
+
         @media (max-width: 768px) {
           font-size: 12px;
         }
+
         &.active {
           text-decoration: underline;
-          color: $black;
+          color: white;
         }
       }
     }
