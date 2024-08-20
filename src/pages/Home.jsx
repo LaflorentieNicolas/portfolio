@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import getProjects from "../api/getProjects";
 import "../sass/main.scss";
 import profilePicture from "../assets/img/profile-picture/profil-picture.webp";
-import ProjectModal from "../components/ProjectModal"; // Assurez-vous que le chemin est correct
+import ProjectModal from "../components/ProjectModal";
 
 function Home() {
   const [projectData, setData] = useState([]);

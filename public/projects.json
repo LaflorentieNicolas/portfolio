@@ -1,86 +1,38 @@
 [
   {
     "id": "projet1",
-    "title": "Booki",
-    "cover": "/assets/img/booki/cover.svg",
-    "codeLink": "https://github.com/LaflorentieNicolas/P2-Booki",
-    "webSite": "https://laflorentienicolas.github.io/P2-Booki/",
+    "title": "Sophie Bluel",
+    "cover": "../src/assets/img/projects/sophie-bluel/main-page.webp",
+    "codeLink": "https://github.com/LaflorentieNicolas/P3-Portfolio-Sophie-Bluel",
+    "webSite": "",
     "pictures": [
-      "/assets/img/booki/picture1.jpg",
-      "/assets/img/booki/picture2.jpg"
+      "/assets/img/projects/sophie-bluel/modal.webp",
+      "/assets/img/projects/sophie-bluel/ajouter-une-photo.webp"
     ],
     "description": "oui"
   },
   {
     "id": "projet2",
-    "title": "test",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
+    "title": "Kasa",
+    "cover": "/assets/img/projects/kasa/main-page.webp",
+    "code-link": "https://github.com/LaflorentieNicolas/P6-Kasa",
+    "web-site": "https://laflorentie-nicolas-p6-kasa.netlify.app/",
+    "pictures": [
+      "/assets/img/projects/kasa/about.webp",
+      "/assets/img/projects/kasa/housing.webp"
+    ],
     "description": "oui"
   },
   {
-    "id": "projet3",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
-    "description": "oui"
-  },
-  {
-    "id": "projet4",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
-    "description": "oui"
-  },
-  {
-    "id": "projet5",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
-    "description": "oui"
-  },
-  {
-    "id": "projet6",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
-    "description": "oui"
-  },
-  {
-    "id": "projet7",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
-    "description": "oui"
-  },
-  {
-    "id": "projet8",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
-    "description": "oui"
-  },
-  {
-    "id": "projet9",
-    "title": "Kasa",
-    "cover": ".jpg",
-    "code-link": "www",
-    "web-site": "www",
-    "pictures": [".jpg", ".jpg"],
+    "id": "peojet3",
+    "title": "Mon vieux Grimoire",
+    "cover": "/assets/img/projects/mon-vieux-grimoire/main-page.webp",
+    "code-link": "https://github.com/LaflorentieNicolas/P7-Mon-Vieux-Grimoire-backend",
+    "web-site": "",
+    "pictures": [
+      "/assets/img/projects/mon-vieux-grimoire/ajout-livre.webp",
+      "/assets/img/projects/mon-vieux-grimoire/ajout-note.webp"
+    ],
     "description": "oui"
   }
 ]
