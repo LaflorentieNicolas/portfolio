@@ -1,8 +1,21 @@
-.projects__container__title {
-  display: flex;
-  justify-content: center;
-  color: #555;
-  font-size: 40px;
+.projects__container-wrapper {
+  background-color: #333;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.projects__container {
+  padding: 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
 }
 
 .card-container {
@@ -11,17 +24,22 @@
   gap: 30px;
   border-radius: 25px;
 }
+
 .card {
   position: relative;
   aspect-ratio: 1/1;
   width: 100%;
   cursor: pointer;
 
-  &__image {
-    position: absolute;
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__cover {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 5px 5px 0 0;
     object-fit: cover;
   }
 }

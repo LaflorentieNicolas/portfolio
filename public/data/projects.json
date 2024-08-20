@@ -1,0 +1,38 @@
+[
+  {
+    "id": "projet1",
+    "title": "Sophie Bluel",
+    "cover": "/img/projects/sophie-bluel/main-page.webp",
+    "codeLink": "https://github.com/LaflorentieNicolas/P3-Portfolio-Sophie-Bluel",
+    "webSite": "",
+    "pictures": [
+      "/img/projects/sophie-bluel/modal.webp",
+      "/img/projects/sophie-bluel/ajouter-une-photo.webp"
+    ],
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+  },
+  {
+    "id": "projet2",
+    "title": "Kasa",
+    "cover": "/img/projects/kasa/main-page.webp",
+    "codelink": "https://github.com/LaflorentieNicolas/P6-Kasa",
+    "webSite": "https://laflorentie-nicolas-p6-kasa.netlify.app/",
+    "pictures": [
+      "/img/projects/kasa/about.webp",
+      "/img/projects/kasa/housing.webp"
+    ],
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+  },
+  {
+    "id": "projet3",
+    "title": "Mon vieux Grimoire",
+    "cover": "/img/projects/mon-vieux-grimoire/main-page.webp",
+    "codelink": "https://github.com/LaflorentieNicolas/P7-Mon-Vieux-Grimoire-backend",
+    "webSite": "",
+    "pictures": [
+      "/img/projects/mon-vieux-grimoire/ajout-livre.webp",
+      "/img/projects/mon-vieux-grimoire/ajout-note.webp"
+    ],
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+  }
+]

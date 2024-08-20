@@ -1,15 +1,10 @@
-import "../sass/main.scss";
+import React from "react";
 
-function Card({ cover, title, id, onPress }) {
+function Card({ id, title, cover, onPress }) {
   return (
-    <div
-      className="card"
-      data-id={id}
-      onClick={onPress}
-      style={{ cursor: "pointer" }}
-    >
-      <p className="card__title">{title}</p>
-      <img className="card__image" src={cover} alt={title} />
+    <div className="card" onClick={() => onPress(id)}>
+      <h3 className="card__title">{title}</h3>
+      <img src={cover} alt={title} className="card__cover" />
     </div>
   );
 }

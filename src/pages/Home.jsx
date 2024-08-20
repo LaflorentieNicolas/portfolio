@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
 import getProjects from "../api/getProjects";
 import "../sass/main.scss";
-import profilePicture from "../assets/img/profile-picture/profil-picture.webp";
 import ProjectModal from "../components/ProjectModal";
+
+const profilePicture = "/img/profile-picture/profil-picture.webp";
 
 function Home() {
   const [projectData, setData] = useState([]);
@@ -15,7 +16,11 @@ function Home() {
     async function getData() {
       try {
         const projects = await getProjects();
-        setData(projects);
+        if (Array.isArray(projects)) {
+          setData(projects);
+        } else {
+          throw new Error("Données invalides reçues");
+        }
       } catch (err) {
         setError(err);
       }
@@ -63,18 +68,24 @@ function Home() {
         </p>
       </div>
       {error && <span>{error.message}</span>}
-      <div className="projects__container">
-        <h2 className="projects__container__title">Mes projets</h2>
-        <div className="card-container">
-          {projectData.map((project) => (
-            <Card
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              cover={project.cover}
-              onPress={() => handleCardClick(project)}
-            />
-          ))}
+      <div className="projects__container-wrapper">
+        <div className="projects__container">
+          <h2 className="projects__container__title">Mes projets</h2>
+          <div className="card-container">
+            {Array.isArray(projectData) && projectData.length > 0 ? (
+              projectData.map((project) => (
+                <Card
+                  key={project.id}
+                  id={project.id}
+                  title={project.title}
+                  cover={project.cover}
+                  onPress={() => handleCardClick(project)}
+                />
+              ))
+            ) : (
+              <p>Aucun projet disponible</p>
+            )}
+          </div>
         </div>
       </div>
       {selectedProject && (

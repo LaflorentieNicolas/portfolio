@@ -1,0 +1,75 @@
+.project-modal {
+  .modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    width: 50vw;
+    max-width: 90vw;
+    margin-left: calc(150% - 50vw);
+
+    .modal-header {
+      position: relative;
+
+      .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background: none;
+        font-size: 24px;
+        color: #000;
+
+        &:hover {
+          color: #555;
+        }
+      }
+
+      .modal-title {
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .modal-body {
+      .project-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        img {
+          flex: 1 1 calc(50% - 10px);
+          max-width: calc(50% - 10px);
+          height: auto;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+      }
+
+      .project-description {
+        margin-top: 20px;
+
+        h4 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      .btn {
+        width: 48%;
+      }
+    }
+  }
+}
