@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "./Carousel";
 import "../sass/main.scss";
 
 function ProjectModal({ show, handleClose, project }) {
+  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+
   if (!show) return null;
+
+  const toggleDescription = () => {
+    setDescriptionVisible(!isDescriptionVisible);
+  };
 
   return (
     <div className="modal-overlay" onClick={handleClose}>
@@ -36,12 +42,22 @@ function ProjectModal({ show, handleClose, project }) {
           </div>
 
           <div className="project-description">
-            <h4>Description</h4>
-            <p>{project.description}</p>
+            <button className="btn btn-description" onClick={toggleDescription}>
+              {isDescriptionVisible
+                ? "Masquer Description"
+                : "Afficher la Description"}
+            </button>
+            {isDescriptionVisible && (
+              <>
+                <h4>Description</h4>
+                <p>{project.description}</p>
+              </>
+            )}
           </div>
         </div>
+
         <div className="modal-footer">
-          {project.codeLink && (
+          {project.codeLink && project.codeLink.trim() !== "" && (
             <a
               className="btn btn-primary"
               href={project.codeLink}
@@ -51,7 +67,8 @@ function ProjectModal({ show, handleClose, project }) {
               Code Github
             </a>
           )}
-          {project.webSite && (
+
+          {project.webSite && project.webSite.trim() !== "" && (
             <a
               className="btn btn-secondary"
               href={project.webSite}

@@ -24,7 +24,7 @@
     "id": "projet2",
     "title": "Kasa",
     "cover": "/img/projects/kasa/main-page.webp",
-    "codelink": "https://github.com/LaflorentieNicolas/P6-Kasa",
+    "codeLink": "https://github.com/LaflorentieNicolas/P6-Kasa",
     "webSite": "https://laflorentie-nicolas-p6-kasa.netlify.app/",
     "pictures": [
       "/img/projects/kasa/main-page.webp",
@@ -43,7 +43,7 @@
     "id": "projet3",
     "title": "Mon vieux Grimoire",
     "cover": "/img/projects/mon-vieux-grimoire/main-page.webp",
-    "codelink": "https://github.com/LaflorentieNicolas/P7-Mon-Vieux-Grimoire-backend",
+    "codeLink": "https://github.com/LaflorentieNicolas/P7-Mon-Vieux-Grimoire-backend",
     "webSite": "",
     "pictures": [
       "/img/projects/mon-vieux-grimoire/main-page.webp",
