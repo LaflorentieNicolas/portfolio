@@ -6,6 +6,7 @@
     "codeLink": "https://github.com/LaflorentieNicolas/P3-Portfolio-Sophie-Bluel",
     "webSite": "",
     "pictures": [
+      "/img/projects/sophie-bluel/main-page.webp",
       "/img/projects/sophie-bluel/modal.webp",
       "/img/projects/sophie-bluel/ajouter-une-photo.webp"
     ],
@@ -18,6 +19,7 @@
     "codelink": "https://github.com/LaflorentieNicolas/P6-Kasa",
     "webSite": "https://laflorentie-nicolas-p6-kasa.netlify.app/",
     "pictures": [
+      "/img/projects/kasa/main-page.webp",
       "/img/projects/kasa/about.webp",
       "/img/projects/kasa/housing.webp"
     ],
@@ -30,6 +32,7 @@
     "codelink": "https://github.com/LaflorentieNicolas/P7-Mon-Vieux-Grimoire-backend",
     "webSite": "",
     "pictures": [
+      "/img/projects/mon-vieux-grimoire/main-page.webp",
       "/img/projects/mon-vieux-grimoire/ajout-livre.webp",
       "/img/projects/mon-vieux-grimoire/ajout-note.webp"
     ],

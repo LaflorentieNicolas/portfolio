@@ -1,39 +1,54 @@
 import React from "react";
-import { Modal, Button, Carousel } from "react-bootstrap";
+import Carousel from "./Carousel";
 import "../sass/main.scss";
 
 function ProjectModal({ show, handleClose, project }) {
+  if (!show) return null;
+
   return (
-    <Modal show={show} onHide={handleClose} dialogClassName="project-modal">
-      <Modal.Header closeButton className="custom-modal-header">
-        <Modal.Title>{project.title}</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <Carousel>
-          {project.pictures.map((pic, index) => (
-            <Carousel.Item key={index}>
-              <img className="d-block w-100" src={pic} alt={` ${index + 1}`} />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-        <div className="project-description">
-          <h4>Description</h4>
-          <p>{project.description}</p>
+    <div className="modal-overlay" onClick={handleClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header">
+          <button
+            className="close-button"
+            onClick={handleClose}
+            aria-label="Close modal"
+          >
+            ×
+          </button>
+          <h2 className="modal-title">{project.title}</h2>
         </div>
-      </Modal.Body>
-      <Modal.Footer>
-        {project.codeLink && (
-          <Button variant="primary" href={project.codeLink} target="_blank">
-            Code Github
-          </Button>
-        )}
-        {project.webSite && (
-          <Button variant="secondary" href={project.webSite} target="_blank">
-            Démo
-          </Button>
-        )}
-      </Modal.Footer>
-    </Modal>
+        <div className="modal-body">
+          <Carousel images={project.pictures} />
+          <div className="project-description">
+            <h4>Description</h4>
+            <p>{project.description}</p>
+          </div>
+        </div>
+        <div className="modal-footer">
+          {project.codeLink && (
+            <a
+              className="btn btn-primary"
+              href={project.codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code Github
+            </a>
+          )}
+          {project.webSite && (
+            <a
+              className="btn btn-secondary"
+              href={project.webSite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Démo
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 

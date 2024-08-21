@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import getProjects from "../api/getProjects";
-import "../sass/main.scss";
 import ProjectModal from "../components/ProjectModal";
+import "../sass/main.scss";
 
 const profilePicture = "/img/profile-picture/profil-picture.webp";
 
@@ -91,8 +91,8 @@ function Home() {
       {selectedProject && (
         <ProjectModal
           show={showModal}
-          project={selectedProject}
           handleClose={handleCloseModal}
+          project={selectedProject}
         />
       )}
     </main>
