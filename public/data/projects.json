@@ -10,6 +10,14 @@
       "/img/projects/sophie-bluel/modal.webp",
       "/img/projects/sophie-bluel/ajouter-une-photo.webp"
     ],
+    "language": [
+      "/img/logo/language/htmlLogo.svg",
+      "/img/logo/language/cssLogo.svg",
+      "/img/logo/language/jsLogo.svg",
+      "/img/logo/language/nodeLogo.svg",
+      "/img/logo/language/githubLogo.svg"
+    ],
+    "languageNames": ["HTML", "CSS", "JavaScript", "Node.js", "GitHub"],
     "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
   },
   {
@@ -23,6 +31,12 @@
       "/img/projects/kasa/about.webp",
       "/img/projects/kasa/housing.webp"
     ],
+    "language": [
+      "/img/logo/language/reactLogo.svg",
+      "/img/logo/language/sassLogo.svg",
+      "/img/logo/language/githubLogo.svg"
+    ],
+    "languageNames": ["React", "Sass", "GitHub"],
     "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
   },
   {
@@ -36,6 +50,12 @@
       "/img/projects/mon-vieux-grimoire/ajout-livre.webp",
       "/img/projects/mon-vieux-grimoire/ajout-note.webp"
     ],
+    "language": [
+      "/img/logo/language/expressLogo.svg",
+      "/img/logo/language/nodeLogo.svg",
+      "/img/logo/language/mongodbLogo.svg"
+    ],
+    "languageNames": ["Express", "Node.js", "MongoDB"],
     "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
   }
 ]

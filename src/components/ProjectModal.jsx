@@ -20,6 +20,21 @@ function ProjectModal({ show, handleClose, project }) {
         </div>
         <div className="modal-body">
           <Carousel images={project.pictures} />
+
+          <div className="language">
+            <h4>Technologies et outils</h4>
+            <div className="language-logos">
+              {project.language.map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo}
+                  alt={`Langage ${index}`}
+                  title={project.languageNames[index]} // Utilise les noms des technologies
+                />
+              ))}
+            </div>
+          </div>
+
           <div className="project-description">
             <h4>Description</h4>
             <p>{project.description}</p>
