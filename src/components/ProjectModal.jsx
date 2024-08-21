@@ -29,7 +29,7 @@ function ProjectModal({ show, handleClose, project }) {
                   key={index}
                   src={logo}
                   alt={`Langage ${index}`}
-                  title={project.languageNames[index]} // Utilise les noms des technologies
+                  title={project.languageNames[index]}
                 />
               ))}
             </div>
