@@ -9,6 +9,7 @@
     transform: translateY(-50%);
     color: #333;
     border: none;
+    background-color: #fff;
     font-size: 80px;
     cursor: pointer;
     padding: 10px;
@@ -22,10 +23,16 @@
 
     &.prev {
       left: 30px;
+      &:hover {
+        color: #0056b3;
+      }
     }
 
     &.next {
       right: 30px;
+      &:hover {
+        color: #0056b3;
+      }
     }
   }
 
