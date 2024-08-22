@@ -28,7 +28,7 @@ function ProjectModal({ show, handleClose, project }) {
             >
               ×
             </button>
-            <h2 className="modal__title">{project.title}</h2>
+            <h3 className="modal__title">{project.title}</h3>
           </div>
           <div className="modal-body">
             <Carousel images={project.pictures} />
