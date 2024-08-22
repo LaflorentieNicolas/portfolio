@@ -10,7 +10,10 @@ function Header() {
             <a href="#about">A propos</a>
           </li>
           <li>
-            <a href="#project">Mes projets</a>
+            <a href="#project">Projets</a>
+          </li>
+          <li>
+            <a href="#skills">Compétences</a>
           </li>
           <li>
             <a href="#contact">Contact</a>

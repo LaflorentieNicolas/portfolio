@@ -1,0 +1,18 @@
+{
+  "frontEnd": [
+    { "logo": "/img/logo/language/htmlLogo.svg", "name": "HTML" },
+    { "logo": "/img/logo/language/cssLogo.svg", "name": "CSS" },
+    { "logo": "/img/logo/language/sassLogo.svg", "name": "sass" },
+    { "logo": "/img/logo/language/jsLogo.svg", "name": "JavaScript" },
+    { "logo": "/img/logo/language/reactLogo.svg", "name": "React" }
+  ],
+  "backEnd": [
+    { "logo": "/img/logo/language/nodeLogo.svg", "name": "Node.js" },
+    { "logo": "/img/logo/language/expressLogo.svg", "name": "Express" },
+    { "logo": "/img/logo/language/mongodbLogo.svg", "name": "MongoDB" }
+  ],
+  "other": [
+    { "logo": "/img/logo/language/githubLogo.svg", "name": "Git & Github" },
+    { "logo": "/img/logo/language/figmaLogo.svg", "name": "Figma" }
+  ]
+}

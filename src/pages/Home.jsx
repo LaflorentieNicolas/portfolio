@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import getProjects from "../api/getProjects";
 import ProjectModal from "../components/ProjectModal";
+import Skills from "../components/Skills";
 import "../sass/main.scss";
 
 const profilePicture = "/img/profile-picture/profil-picture.webp";
@@ -63,8 +64,7 @@ function Home() {
           Depuis mon plus jeune âge, j'ai été passionné par l'informatique, tant
           du côté matériel que logiciel. Cette passion m'a finalement poussé à
           franchir le pas et à suivre une formation diplômante chez
-          OpenClassrooms. <br /> J'ai ainsi le plaisir de vous présenter mon
-          portfolio.
+          OpenClassrooms.
         </p>
       </section>
       {error && <span>{error.message}</span>}
@@ -95,6 +95,7 @@ function Home() {
           project={selectedProject}
         />
       )}
+      <Skills />
     </main>
   );
 }
