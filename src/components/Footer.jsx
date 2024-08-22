@@ -7,7 +7,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <footer>
-      <div className="footer">
+      <section id="contact" className="footer">
         <a
           href="https://www.linkedin.com/in/nicolas-laflorentie-b1880927/"
           target="_blank"
@@ -31,7 +31,7 @@ function Footer() {
         <a href="tel:0685605988">
           <FontAwesomeIcon icon={faPhone} aria-label="Phone" className="logo" />
         </a>
-      </div>
+      </section>
     </footer>
   );
 }

@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <main>
-      <div className="about__me">
+      <section id="about" className="about__me">
         <img
           src={profilePicture}
           alt="Laflorentie Nicolas"
@@ -66,9 +66,9 @@ function Home() {
           OpenClassrooms. <br /> J'ai ainsi le plaisir de vous présenter mon
           portfolio.
         </p>
-      </div>
+      </section>
       {error && <span>{error.message}</span>}
-      <div className="projects__container-wrapper">
+      <section id="project" className="projects__container-wrapper">
         <div className="projects__container">
           <h2 className="projects__container__title">Mes projets</h2>
           <div className="card-container">
@@ -87,7 +87,7 @@ function Home() {
             )}
           </div>
         </div>
-      </div>
+      </section>
       {selectedProject && (
         <ProjectModal
           show={showModal}

@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import "../sass/main.scss";
 
 function Header() {
@@ -6,30 +5,15 @@ function Header() {
     <header>
       <nav>
         <ul>
+          <li></li>
           <li>
-            <NavLink to="/" activeclassname="active">
-              Accueil
-            </NavLink>
+            <a href="#about">A propos</a>
           </li>
           <li>
-            <NavLink to="/about" activeclassname="active">
-              A propos
-            </NavLink>
+            <a href="#project">Mes projets</a>
           </li>
           <li>
-            <NavLink to="/project" activeclassname="active">
-              Mes projets
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/cv" activeclassname="active">
-              CV
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" activeclassname="active">
-              Contact
-            </NavLink>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
