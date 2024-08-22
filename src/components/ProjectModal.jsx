@@ -44,12 +44,14 @@ function ProjectModal({ show, handleClose, project }) {
               <h4 className="modal-body__title">Technologies et outils</h4>
               <div className="modal-body__language-logos">
                 {project.language.map((logo, index) => (
-                  <img
-                    key={index}
-                    src={logo}
-                    alt={`Langage ${index}`}
-                    title={project.languageNames[index]}
-                  />
+                  <div key={index} className="modal-body__language-item">
+                    <img
+                      src={logo}
+                      alt={`Langage ${project.languageNames[index]}`}
+                      title={project.languageNames[index]}
+                    />
+                    <p>{project.languageNames[index]}</p>{" "}
+                  </div>
                 ))}
               </div>
             </div>
