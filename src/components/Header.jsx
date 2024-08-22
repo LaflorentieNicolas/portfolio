@@ -5,7 +5,6 @@ function Header() {
     <header>
       <nav>
         <ul>
-          <li></li>
           <li>
             <a href="#about">A propos</a>
           </li>
