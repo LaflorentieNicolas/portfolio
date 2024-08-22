@@ -1,86 +1,92 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel";
+import DescriptionModal from "./DescriptionModal"; // Importer la nouvelle modal
 import "../sass/main.scss";
 
 function ProjectModal({ show, handleClose, project }) {
-  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+  const [isDescriptionModalOpen, setDescriptionModalOpen] = useState(false);
 
   if (!show) return null;
 
-  const toggleDescription = () => {
-    setDescriptionVisible(!isDescriptionVisible);
+  const openDescriptionModal = () => {
+    setDescriptionModalOpen(true);
+  };
+
+  const closeDescriptionModal = () => {
+    setDescriptionModalOpen(false);
   };
 
   return (
-    <div className="modal-overlay" onClick={handleClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <div className="modal-header">
-          <button
-            className="close-button"
-            onClick={handleClose}
-            aria-label="Close modal"
-          >
-            ×
-          </button>
-          <h2 className="modal-title">{project.title}</h2>
-        </div>
-        <div className="modal-body">
-          <Carousel images={project.pictures} />
-
-          <div className="language">
-            <h4>Technologies et outils</h4>
-            <div className="language-logos">
-              {project.language.map((logo, index) => (
-                <img
-                  key={index}
-                  src={logo}
-                  alt={`Langage ${index}`}
-                  title={project.languageNames[index]}
-                />
-              ))}
+    <>
+      <div className="modal" onClick={handleClose}>
+        <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal__header">
+            <button
+              className="modal__close-button"
+              onClick={handleClose}
+              aria-label="Close modal"
+            >
+              ×
+            </button>
+            <h2 className="modal__title">{project.title}</h2>
+          </div>
+          <div className="modal-body">
+            <Carousel images={project.pictures} />
+            <div className="modal-body__project-description">
+              <button
+                className="btn btn-description"
+                onClick={openDescriptionModal}
+              >
+                Afficher la Description
+              </button>
+            </div>
+            <div className="modal-body__language">
+              <h4 className="modal-body__title">Technologies et outils</h4>
+              <div className="modal-body__language-logos">
+                {project.language.map((logo, index) => (
+                  <img
+                    key={index}
+                    src={logo}
+                    alt={`Langage ${index}`}
+                    title={project.languageNames[index]}
+                  />
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="project-description">
-            <button className="btn btn-description" onClick={toggleDescription}>
-              {isDescriptionVisible
-                ? "Masquer Description"
-                : "Afficher la Description"}
-            </button>
-            {isDescriptionVisible && (
-              <>
-                <h4>Description</h4>
-                <p>{project.description}</p>
-              </>
+          <div className="modal-footer">
+            {project.codeLink && project.codeLink.trim() !== "" && (
+              <a
+                className="btn btn-primary"
+                href={project.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code Github
+              </a>
+            )}
+
+            {project.webSite && project.webSite.trim() !== "" && (
+              <a
+                className="btn btn-secondary"
+                href={project.webSite}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Démo
+              </a>
             )}
           </div>
         </div>
-
-        <div className="modal-footer">
-          {project.codeLink && project.codeLink.trim() !== "" && (
-            <a
-              className="btn btn-primary"
-              href={project.codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Code Github
-            </a>
-          )}
-
-          {project.webSite && project.webSite.trim() !== "" && (
-            <a
-              className="btn btn-secondary"
-              href={project.webSite}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Démo
-            </a>
-          )}
-        </div>
       </div>
-    </div>
+
+      <DescriptionModal
+        show={isDescriptionModalOpen}
+        handleClose={closeDescriptionModal}
+        description={project.description}
+      />
+    </>
   );
 }
 
