@@ -25,7 +25,7 @@ function Skills() {
         <div className="skills__container">
           {skills.frontEnd.map((skill, index) => (
             <div key={index} className="skills__column">
-              <img src={skill.logo} alt={skill.name} className="skills__logo" />
+              <img src={skill.logo} alt="" className="skills__logo" />
               <p className="skills__name">{skill.name}</p>
             </div>
           ))}
@@ -36,7 +36,7 @@ function Skills() {
         <div className="skills__container">
           {skills.backEnd.map((skill, index) => (
             <div key={index} className="skills__column">
-              <img src={skill.logo} alt={skill.name} className="skills__logo" />
+              <img src={skill.logo} alt="" className="skills__logo" />
               <p className="skills__name">{skill.name}</p>
             </div>
           ))}
@@ -47,7 +47,7 @@ function Skills() {
         <div className="skills__container">
           {skills.other.map((skill, index) => (
             <div key={index} className="skills__column">
-              <img src={skill.logo} alt={skill.name} className="skills__logo" />
+              <img src={skill.logo} alt="" className="skills__logo" />
               <p className="skills__name">{skill.name}</p>
             </div>
           ))}
