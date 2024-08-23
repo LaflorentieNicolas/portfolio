@@ -46,6 +46,7 @@ function Footer() {
               aria-label="LinkedIn"
               className="logo"
             />
+            <span className="sr-only">LinkedIn</span>
           </a>
         </div>
       </section>
