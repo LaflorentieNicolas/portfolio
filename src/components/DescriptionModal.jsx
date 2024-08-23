@@ -23,6 +23,13 @@ function DescriptionModal({ show, handleClose, description }) {
         >
           ← Retour
         </button>
+        <button
+          className="description-modal__back-button--mobile"
+          onClick={handleClose}
+          aria-label="Back to Project Modal"
+        >
+          ←
+        </button>
       </div>
     </div>
   );

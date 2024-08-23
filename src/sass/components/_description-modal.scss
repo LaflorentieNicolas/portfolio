@@ -39,7 +39,7 @@
     margin-bottom: 20px;
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.6;
       color: #555;
       @media (max-width: 768px) {
@@ -60,10 +60,32 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
     @media (max-width: 768px) {
-      font-size: 12px;
+      display: none;
     }
 
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  &__back-button--mobile {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
     &:hover {
       background-color: #0056b3;
     }
