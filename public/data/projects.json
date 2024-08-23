@@ -56,7 +56,6 @@
       "/img/logo/language/mongodbLogo.svg"
     ],
     "languageNames": ["Express", "Node.js", "MongoDB"],
-
     "description": "Il s'agit d'un projet pédagogique développé lors de ma formation OpenClassrooms. Dans le cadre du projet 'Mon vieux grimoire', j'ai développé le backend d’une application de notation de livres, avec des fonctionnalités d'affichage, de création, de modification et de notation en suivant la gestion de données CRUD.\n\nL'une des principales tâches était d'implémenter une authentification sécurisée des utilisateurs, en intégrant le stockage des informations sur MongoDB, le cryptage des mots de passe avec Bcrypt, et l'utilisation de tokens JWT pour sécuriser les requêtes via un middleware d'authentification.\n\nCe projet m'a permis de renforcer mes compétences en développement full stack, en particulier avec Node.js, Express, MongoDB, et Mongoose. J'ai également découvert la gestion d'images avec Multer et Sharp, et la sécurité d’une application avec helmet et rate-limiting."
   }
 ]

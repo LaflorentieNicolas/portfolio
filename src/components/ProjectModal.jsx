@@ -47,7 +47,7 @@ function ProjectModal({ show, handleClose, project }) {
                   <div key={index} className="modal-body__language-item">
                     <img
                       src={logo}
-                      alt={`Langage ${project.languageNames[index]}`}
+                      alt=""
                       title={project.languageNames[index]}
                     />
                     <p>{project.languageNames[index]}</p>{" "}
