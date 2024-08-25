@@ -4,7 +4,7 @@ header {
   position: fixed;
 
   width: 100%;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
@@ -14,7 +14,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #333;
+  background-color: $dark-gray;
 
   @media (max-width: 768px) {
     padding: 5px;
@@ -32,7 +32,7 @@ nav {
     li {
       font-weight: 500;
       display: block;
-      color: white;
+      color: $white;
       &:hover {
         opacity: 0.5;
       }

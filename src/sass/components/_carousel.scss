@@ -7,7 +7,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #333;
+    color: $dark-gray;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     font-size: 80px;
@@ -24,14 +24,14 @@
     &.prev {
       left: 30px;
       &:hover {
-        color: #0056b3;
+        color: $medium-blue;
       }
     }
 
     &.next {
       right: 30px;
       &:hover {
-        color: #0056b3;
+        color: $medium-blue;
       }
     }
   }
@@ -62,7 +62,7 @@
     border-radius: 10px;
     font-size: 20px;
     padding: 0px 5px 0px 5px;
-    color: black;
+    color: $black;
     background-color: rgba(255, 255, 255, 0.7);
   }
 }

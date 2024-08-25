@@ -11,7 +11,7 @@
   animation: fadeIn 0.3s ease-out;
 
   &__content {
-    background: #fff;
+    background: $white;
     border-radius: 8px;
     position: relative;
     max-width: 50vw;
@@ -37,12 +37,12 @@
     background: none;
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: $white;
     cursor: pointer;
     z-index: 1;
 
     &:hover {
-      color: #0056b3;
+      color: $medium-blue;
     }
   }
 
@@ -53,8 +53,8 @@
     font-weight: bold;
     text-align: center;
     flex: 1;
-    color: white;
-    background-color: #333;
+    color: $white;
+    background-color: $dark-gray;
     @media (max-width: 768px) {
       font-size: 20px;
     }
@@ -73,8 +73,8 @@
     font-size: 24px;
     padding: 5px;
     margin-bottom: 20px;
-    color: white;
-    background-color: #333;
+    color: $white;
+    background-color: $dark-gray;
     @media (max-width: 768px) {
       font-size: 20px;
     }
@@ -107,7 +107,7 @@
       p {
         margin-top: 10px;
         font-size: 18px;
-        color: #333;
+        color: $dark-gray;
         text-align: center;
         font-weight: bold;
         @media (max-width: 768px) {
@@ -125,8 +125,8 @@
       padding: 10px 20px;
       border: none;
       border-radius: 15px;
-      background-color: #333;
-      color: #fff;
+      background-color: $dark-gray;
+      color: $white;
       font-size: 16px;
       cursor: pointer;
       @media (max-width: 768px) {
@@ -134,7 +134,7 @@
       }
 
       &:hover {
-        background-color: #0056b3;
+        background-color: $medium-blue;
       }
     }
 
@@ -154,8 +154,8 @@
     padding: 10px 20px;
     border: none;
     border-radius: 15px;
-    background-color: #333;
-    color: #fff;
+    background-color: $dark-gray;
+    color: $white;
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 10px;
@@ -164,7 +164,7 @@
     }
 
     &:hover {
-      background-color: #0056b3;
+      background-color: $medium-blue;
     }
   }
 }

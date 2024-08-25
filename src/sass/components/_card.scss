@@ -1,5 +1,5 @@
 .projects__container-wrapper {
-  background-color: #333;
+  background-color: $dark-gray;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
@@ -12,7 +12,7 @@
   &__title {
     display: flex;
     justify-content: center;
-    color: white;
+    color: $white;
     font-size: 40px;
     margin-bottom: 50px;
   }
