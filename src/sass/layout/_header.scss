@@ -2,22 +2,20 @@
 
 header {
   position: fixed;
-
   width: 100%;
-  background-color: $white;
+  background-color: $dark-gray;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
 
-nav {
+.desktop-navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: $dark-gray;
-
   @media (max-width: 768px) {
     padding: 5px;
+    display: none;
   }
 
   ul {
@@ -46,6 +44,53 @@ nav {
 
         @media (max-width: 768px) {
           font-size: 13px;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.mobile-navbar {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menus-logo {
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+  }
+
+  .mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    &.open {
+      max-height: 200px;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-weight: 500;
+        padding-bottom: 20px;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        a {
+          color: $white;
+          font-size: 18px;
+          padding-left: 20px;
+          transition: margin-right 2s;
         }
       }
     }
